@@ -24,7 +24,6 @@ as_maplibregl <- function(.data, ...) {
   }
 
   navigation_control <- getOption("maplibregl.navigation.control", FALSE)
-  message(navigation_control)
 
   bounds <- sfheaders::sf_bbox(.data)
   map <- maplibregl(
